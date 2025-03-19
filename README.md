@@ -127,8 +127,8 @@ POLL SCM: * * * * *
 Build Goals: clean install
 Post build actions: Send build artifacts over ssh
 SSH server: dockerhost
-TransferSet: webapp/target/*.war
-Remove prefix: webapp/target
+TransferSet: **/*.war
+Remove prefix: target
 Remote directory://opt//docker                  (/home/dockeradmin)
 ```
 
