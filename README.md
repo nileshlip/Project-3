@@ -25,7 +25,9 @@ systemctl start docker
 useradd dockeradmin
 passwd dockeradmin
 usermod -aG docker dockeradmin
-su - dockeradmin  
+su - dockeradmin
+visudo
+dockeradmin NOPASSWD
 ```
 - Open `visudo` and add `dockeradmin` For Root Previlege
 - Start docker service.
