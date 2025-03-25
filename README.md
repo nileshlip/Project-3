@@ -67,7 +67,7 @@ provide password
 ```sh
 Name: BuildAndDeployOnContainer-CI
 Type: Maven Project
-SCM: https://github.com/nileshlip/
+SCM: https://github.com/nileshlip/mvn-dynamic-web-app-template.git
 POLL SCM: * * * * *
 Build Goals: clean install
 Post build actions: Send build artifacts over ssh
@@ -89,7 +89,7 @@ sudo chown -R dockeradmin:dockeradmin docker
 ```
 
 - We have our Dockerfile under `/home/root`, we will move Dockerfile under `docker` directory and change ownership as well 
-```sh
+
 - Configure tomcat-users.xml for Manager Access ,Create (tomcat-users.xml) File On docker in /opt/docker/
 ```sh
   <tomcat-users>
